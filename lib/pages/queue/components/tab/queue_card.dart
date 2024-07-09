@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pos_mobile/config/style.dart';
-import 'package:pos_mobile/utils/size.dart';
+import 'package:pos_mobile/utils/sizes.dart';
 import 'package:pos_mobile/widgets/container_textfield.dart';
 import 'package:pos_mobile/widgets/full_button.dart';
 
@@ -21,10 +21,7 @@ class QueueCard extends StatelessWidget {
                 border: InputBorder.none,
                 isDense: true,
                 hintText: 'จำนวนลูกค้า',
-                hintStyle: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey.shade300,
-                ),
+                hintStyle: hintMedium,
               ),
             ),
           ),

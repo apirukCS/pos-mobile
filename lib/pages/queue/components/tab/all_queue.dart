@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pos_mobile/config/style.dart';
 import 'package:pos_mobile/pages/queue/components/container_card_queue.dart';
 
-class QueueAll extends StatelessWidget {
-  const QueueAll({Key? key}) : super(key: key);
+class AllQueue extends StatelessWidget {
+  const AllQueue({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pos_mobile/config/style.dart';
-import 'package:pos_mobile/pages/salse/sales_screen.dart';
-import 'package:pos_mobile/utils/size.dart';
+import 'package:pos_mobile/pages/nav_bar_menu_category.dart';
 
 class ContainerPosItem extends StatelessWidget {
   const ContainerPosItem({Key? key, required this.text}) : super(key: key);
@@ -11,7 +10,6 @@ class ContainerPosItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = displayHeight(context);
     return Padding(
       padding: const EdgeInsets.all(kHalfPadding),
       child: InkWell(
@@ -42,6 +40,6 @@ class ContainerPosItem extends StatelessWidget {
   }
 
   void _onTap() {
-    Get.to(const SalesScreen());
+    Get.to(const NavBarMenuCategory());
   }
 }

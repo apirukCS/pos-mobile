@@ -23,16 +23,11 @@ class ContainerCardQueue extends StatelessWidget {
         children: [
           Text(
             'คิวที่ $numberOfQueue',
-            style: const TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.w500,
-            ),
+            style: Theme.of(context).textTheme.titleMedium,
           ),
           Text(
             'จำนวนลูกค้า $amount คน',
-            style: const TextStyle(
-              fontSize: 22,
-            ),
+            style: Theme.of(context).textTheme.labelLarge,
           ),
         ],
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pos_mobile/utils/size.dart';
+import 'package:pos_mobile/config/style.dart';
 
 class NameTextField extends StatelessWidget {
   const NameTextField({Key? key, required this.text}) : super(key: key);
@@ -8,16 +8,12 @@ class NameTextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = displayWidth(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Text(
           text,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
-          ),
+          style: boldLarge,
         ),
       ],
     );

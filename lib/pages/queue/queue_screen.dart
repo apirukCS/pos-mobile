@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pos_mobile/pages/queue/components/tab/current_queue.dart';
-import 'package:pos_mobile/pages/queue/components/tab/queue_all.dart';
+import 'package:pos_mobile/pages/queue/components/tab/all_queue.dart';
 import 'package:pos_mobile/pages/queue/components/tab/queue_card.dart';
 import 'package:pos_mobile/pages/queue/components/tab/table_available.dart';
 import 'package:pos_mobile/widgets/go_back.dart';
@@ -46,7 +46,7 @@ class _QueueScreenState extends State<QueueScreen>
           children: const [
             CurrentQueue(),
             QueueCard(),
-            QueueAll(),
+            AllQueue(),
             TableAvailable(),
           ],
         ),

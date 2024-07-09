@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:pos_mobile/pages/branch/branch_screen.dart';
 import 'package:pos_mobile/pages/lobby/components/container_menu.dart';
 import 'package:pos_mobile/pages/queue/queue_screen.dart';
-import 'package:pos_mobile/utils/size.dart';
+import 'package:pos_mobile/utils/sizes.dart';
 import 'package:pos_mobile/widgets/go_back.dart';
 
 class LobbyScreen extends StatelessWidget {
@@ -30,7 +30,7 @@ class LobbyScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ContainerMenu(
-                  text: 'ครัว',
+                  text: 'ขาย',
                   onTap: _goToBranch,
                 ),
                 ContainerMenu(

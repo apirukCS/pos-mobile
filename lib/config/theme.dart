@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pos_mobile/config/style.dart';
 
 ThemeData themeData() {
   return ThemeData(
@@ -10,11 +11,7 @@ ThemeData themeData() {
       iconTheme: const IconThemeData(color: Colors.black87),
       actionsIconTheme: const IconThemeData(color: Colors.black87),
       elevation: 0.0,
-      titleTextStyle: const TextStyle(
-        color: Colors.black87,
-        fontSize: 20,
-        fontWeight: FontWeight.w600,
-      ),
+      titleTextStyle: titleAppBar,
     ),
   );
 }

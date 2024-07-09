@@ -11,6 +11,9 @@ class FullButton extends StatelessWidget {
     this.textColor,
     this.paddingTB,
     this.fontSize,
+    this.btnHeight,
+    this.btnWidth,
+    this.paddingLR,
   }) : super(key: key);
 
   final String text;
@@ -19,12 +22,16 @@ class FullButton extends StatelessWidget {
   final Color? color;
   final Color? textColor;
   final double? paddingTB;
+  final double? paddingLR;
   final double? fontSize;
+  final double? btnHeight;
+  final double? btnWidth;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: double.infinity,
+      width: btnWidth ?? double.infinity,
+      height: btnHeight,
       child: ElevatedButton.icon(
         icon: icon != null ? Icon(icon) : Container(),
         label: Center(
@@ -33,6 +40,7 @@ class FullButton extends StatelessWidget {
             style: TextStyle(
               color: textColor ?? Colors.black87,
               fontSize: fontSize ?? 18,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ),
@@ -42,8 +50,10 @@ class FullButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(8.0),
           ),
           padding: EdgeInsets.only(
-            top: paddingTB ?? kHalfPadding * 3,
-            bottom: paddingTB ?? kHalfPadding * 3,
+            top: paddingTB ?? kPadding,
+            bottom: paddingTB ?? kPadding,
+            right: paddingLR ?? kHalfPadding,
+            left: paddingLR ?? kHalfPadding,
           ),
         ),
         onPressed: onPress,

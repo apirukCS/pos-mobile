@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pos_mobile/config/style.dart';
 import 'package:pos_mobile/pages/branch/components/container_pos_item.dart';
-import 'package:pos_mobile/utils/size.dart';
+import 'package:pos_mobile/utils/sizes.dart';
 import 'package:pos_mobile/widgets/go_back.dart';
 
 class BranchScreen extends StatelessWidget {
@@ -36,13 +36,13 @@ class BranchScreen extends StatelessWidget {
             const SizedBox(height: kHalfPadding),
             SizedBox(
               width: width * 0.8,
-              height: height * 0.5,
+              height: height * 0.65,
               child: GridView.count(
                 crossAxisCount: 4,
                 childAspectRatio: (1 / .6),
                 padding: const EdgeInsets.all(kHalfPadding),
-                children: List.generate(10, (index) {
-                  return ContainerPosItem(text: 'ทดสอบ $index');
+                children: List.generate(20, (index) {
+                  return ContainerPosItem(text: 'POS $index');
                 }),
               ),
             ),

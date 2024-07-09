@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: themeData(),
+      debugShowCheckedModeBanner: false,
       home: const LoginScreen(),
     );
   }

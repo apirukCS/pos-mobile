@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pos_mobile/config/style.dart';
-import 'package:pos_mobile/utils/size.dart';
+import 'package:pos_mobile/utils/sizes.dart';
 
 class ContainerMenu extends StatelessWidget {
   const ContainerMenu({Key? key, required this.text, required this.onTap})
